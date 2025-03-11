@@ -7,8 +7,9 @@ class Patient {
 public:
     std::string name;
     int age;
+    std::string issue;
 
-    Patient(std::string patName, int patAge);
+    Patient(std::string pName, int pAge, std::string pIssue);
     void display() const;
 };
 

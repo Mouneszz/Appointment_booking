@@ -5,10 +5,11 @@
 
 class Doctor {
 public:
+    int id;
     std::string name;
-    std::string specialty;
+    std::string specialization;
 
-    Doctor(std::string docName, std::string docSpecialty);
+    Doctor(int docId, std::string docName, std::string spec);
     void display() const;
 };
 

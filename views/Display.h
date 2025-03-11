@@ -1,10 +1,14 @@
 #ifndef DISPLAY_H
 #define DISPLAY_H
-
 #include "../models/Appointment.h"
-class Display {
+#include "../models/Doctor.h"
+#include <vector>
+
+class View {
 public:
-    static void showAppointment(const Appointment& app);
+    void showDoctors(const std::vector<Doctor> &doctors);
+    void showAppointment(const Appointment &appt);
 };
 
 #endif
+

@@ -1,13 +1,20 @@
-#ifndef BOOKINGCONTROLLER_H
-#define BOOKINGCONTROLLER_H
+#ifndef CONTROLLER_H
+#define CONTROLLER_H
+#include "../models/Doctor.h"
+#include "../models/Appointment.h"
+#include "../views/Display.h"
+#include "../controllers/BookingController.h"
+#include <vector>
 
-#include "../models/Appointment.h" 
+class Controller {
+private:
+    std::vector<Doctor> doctors;
+    std::vector<Appointment> appointments;
+    View view;
 
-
-
-class BookingController {
 public:
-    static Appointment bookAppointment(Doctor doc, Patient pat, std::string date);
+    Controller();
+    void bookAppointment();
 };
 
 #endif

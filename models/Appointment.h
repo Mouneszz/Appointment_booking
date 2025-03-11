@@ -3,15 +3,13 @@
 
 #include "Doctor.h"
 #include "Patient.h"
-#include <string>
 
 class Appointment {
 public:
     Doctor doctor;
     Patient patient;
-    std::string date;
 
-    Appointment(Doctor doc, Patient pat, std::string appDate);
+    Appointment(Doctor d, Patient p);
     void display() const;
 };
 
